@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cin >> a;
+	bool f = false;
+	int a3 = a % 10;
+	a /= 10;
+	int a2 = a % 10;
+	a /= 10;
+	int a1 = a % 10;
+	if (a3 > a2 and a2 > a1 or a1 > a2 and a2 > a3) {
+		f = true;
+	}
+	cout << "res = " << f;
+}
