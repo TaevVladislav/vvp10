@@ -13,5 +13,10 @@ int main()
 	if (pow(c, 2) == pow(a, 2) + pow(b, 2)){
 		f = true;
 	}
+	else if (pow(a, 2) == pow(c, 2) + pow(b, 2)) {
+		f = true;
+	}
+	else if (pow(b, 2) == pow(a, 2) + pow(c, 2)) {
+		f = true;
+	}
 	cout << "res = " << f;
-}
